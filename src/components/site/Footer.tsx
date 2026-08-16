@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Linkedin, Twitter } from "lucide-react";
+import logo from "../../assests/logo.png";
 
 export function Footer() {
   const cols = [
@@ -48,7 +49,7 @@ export function Footer() {
           <div className="space-y-4 pr-4">
             <Link to="/" className="inline-flex items-center">
               <img
-                src="/src/assests/logo.png"
+                src={logo}
                 alt="Roji Roti"
                 className="h-16 w-auto object-contain"
               />

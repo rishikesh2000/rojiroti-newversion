@@ -5,6 +5,8 @@ import { Navbar } from "@/components/site/Navbar";
 import { OtpAuthForm } from "@/components/site/OtpAuthForm";
 import { Briefcase, Building2, CheckCircle2 } from "lucide-react";
 import { getSession, setSession } from "@/lib/session";
+import logo from "../assests/logo.png";
+
 
 const perks = [
   "Post unlimited jobs across India",
@@ -33,7 +35,7 @@ export default function EmployerLogin() {
         <div className="hidden text-foreground md:block">
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="/src/assests/logo.png"
+              src={logo}
               alt="Roji Roti"
               className="h-18 w-auto object-contain bg-transparent"
             />

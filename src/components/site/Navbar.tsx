@@ -6,6 +6,9 @@ import useEmployeeStore from "@/store/employeeStore";
 import useEmployerStore from "@/store/employerStore";
 // Removed route-based i18n in favor of Google Translate widget
 import GoogleTranslate from "@/components/GoogleTranslate";
+import logo from "../../assests/logo.png";
+import mlogo from "../../assests/mlogo.png";
+
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -190,12 +193,12 @@ export function Navbar() {
           <div className="flex flex-1 items-center gap-4">
             <Link to="/" className="flex items-center gap-2">
               <img
-                src="/src/assests/logo.png"
+                src={logo}
                 alt="Roji Roti"
                 className="hidden h-15 w-auto object-contain bg-transparent md:block"
               />
               <img
-                src="/src/assests/mlogo.png"
+                src={mlogo}
                 alt="Roji Roti mobile"
                 className="block h-10 w-auto object-contain bg-transparent md:hidden"
               />

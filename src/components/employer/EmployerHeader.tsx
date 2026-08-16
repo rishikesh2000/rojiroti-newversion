@@ -14,6 +14,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 import { clearSession, useSession } from "@/lib/session";
 import useEmployerStore from "@/store/employerStore";
+import logo from "../../assests/logo.png"
 
 type EmployerHeaderProps = {
   onMenuToggle: () => void;
@@ -82,7 +83,7 @@ export function EmployerHeader({ onMenuToggle }: EmployerHeaderProps) {
 
         <Link to="/employer-dashboard" className="hidden items-center gap-2 lg:flex">
           <img
-            src="/src/assests/logo.png"
+            src={logo}
             alt="Roji Roti"
             className="h-9 w-auto object-contain bg-transparent"
           />

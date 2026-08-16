@@ -5,6 +5,9 @@ import { Navbar } from "@/components/site/Navbar";
 import { OtpAuthForm } from "@/components/site/OtpAuthForm";
 import { Briefcase, CheckCircle2, UserRound } from "lucide-react";
 import { getSession, setSession } from "@/lib/session";
+import logo from "../assests/logo.png";
+
+
 
 const perks = [
   "Apply to 1 Lakh+ verified jobs",
@@ -33,7 +36,7 @@ export default function Login() {
         <div className="hidden text-foreground md:block">
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="/src/assests/logo.png"
+              src={logo}
               alt="Roji Roti"
               className="h-18 w-auto object-contain bg-transparent"
             />
@@ -61,7 +64,7 @@ export default function Login() {
         <div className="w-full">
           <Link to="/" className="mx-auto mb-6 flex w-fit items-center gap-2 md:hidden">
             <img
-              src="/src/assests/logo.png"
+              src={logo}
               alt="Roji Roti"
               className="h-12 w-auto object-contain bg-transparent"
             />
