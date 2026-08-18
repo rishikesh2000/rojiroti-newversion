@@ -1736,7 +1736,7 @@ export default function Dashboard() {
         </div>
 
         <Tabs defaultValue="profile" className="space-y-6">
-          <TabsList className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+          <TabsList className="w-full mb-4 grid grid-cols-2 gap-2 sm:mb-0 sm:grid-cols-5">
               <TabsTrigger value="profile">
                 <User className="h-4 w-4" /> Profile
               </TabsTrigger>
@@ -1753,7 +1753,7 @@ export default function Dashboard() {
                 <Clock className="h-4 w-4" /> Interviews
               </TabsTrigger>
             </TabsList>
-          <TabsContent value="profile" className="rounded-3xl bg-white p-0 shadow-sm">
+          <TabsContent value="profile" className="rounded-3xl bg-white p-0 shadow-sm mt-25 sm:mt-6">
             <div className="grid gap-6 lg:grid-cols-[360px_1fr]">
               <div className="overflow-hidden rounded-[2rem] shadow-[0_25px_50px_-30px_rgba(15,23,42,0.35)]">
                 <div className="bg-gradient-primary px-6 py-7 text-white">
@@ -2162,7 +2162,7 @@ export default function Dashboard() {
             </div>
           </TabsContent>
 
-          <TabsContent value="resume" className="rounded-[2rem] bg-white p-0 shadow-sm">
+          <TabsContent value="resume" className="rounded-[2rem] bg-white p-0 shadow-sm mt-25 sm:mt-6">
             <div className="grid gap-6 lg:grid-cols-[320px_1fr]">
               <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50 via-white to-sky-50 p-6 shadow-[0_18px_40px_-30px_rgba(14,116,144,0.45)]">
                 <div className="flex items-center gap-3 text-slate-900">
@@ -2317,7 +2317,7 @@ export default function Dashboard() {
             </div>
           </TabsContent>
 
-          <TabsContent value="applications" className="rounded-3xl bg-white p-6 shadow-sm">
+          <TabsContent value="applications" className="rounded-3xl bg-white p-6 shadow-sm mt-25 sm:mt-6">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h2 className="text-lg font-semibold">Applications</h2>
@@ -2393,7 +2393,7 @@ export default function Dashboard() {
             )}
           </TabsContent>
 
-          <TabsContent value="saved" className="rounded-3xl bg-white p-6 shadow-sm">
+          <TabsContent value="saved" className="rounded-3xl bg-white p-6 shadow-sm mt-25 sm:mt-6">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h2 className="text-lg font-semibold">Saved jobs</h2>
@@ -2464,7 +2464,7 @@ export default function Dashboard() {
             </div>
           </TabsContent>
 
-          <TabsContent value="interviews" className="rounded-3xl bg-white p-6 shadow-sm">
+          <TabsContent value="interviews" className="rounded-3xl bg-white p-6 shadow-sm mt-25 sm:mt-6">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h2 className="text-lg font-semibold">Interviews</h2>

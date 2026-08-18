@@ -8,6 +8,7 @@ import useEmployerStore from "@/store/employerStore";
 import GoogleTranslate from "@/components/GoogleTranslate";
 import logo from "../../assests/logo.png";
 import mlogo from "../../assests/mlogo.png";
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 
 
 export function Navbar() {
